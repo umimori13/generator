@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/index.css"/>
+
+    <script src="/js/vue.js"></script>
+    <script src="/js/axios.js"></script>
+
+</head>
+<body>
+<h2 id="headTitle">{{headText}}</h2>
+<div id="poDataDiv">
+    {{classNameText}}<input type="text" v-model="className"/>
+    <form id="variablesNameTypesForm" v-for="variablesNameType in variablesNameTypes">
+        <tr>
+            <td>
+                {{variablesNameText}}<input type="text" v-model="variablesNameType.name">
+            </td>
+            <td>
+                {{variablesTypeText}}<input type="text" v-model="variablesNameType.type">
+            </td>
+        </tr>
+    </form>
+    <input type="button" v-on:click="addVariablesNameTypesRow" v-model="addVariablesNameTypesRowText"/>
+</div>
+<div id="result">
+    {{resultText}}
+</div>
+<input id="submitButton" type="button" v-model="submitText" v-on:click="submit"/>
+<script src="/js/index.js"></script>
+</body>
+</html>
