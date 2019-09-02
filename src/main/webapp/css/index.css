@@ -1,3 +1,36 @@
 #result {
     white-space: pre-line;
 }
+#headTitle {
+    color: #fafafa;
+    letter-spacing: 0;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+
+}
+#poDataDiv {
+    color: #66CCFF;
+    
+}
+input[type="text"]
+{
+  width:150px;
+  display:block;
+  border: 1px solid #66ccff;
+  font-family: Verdana, Arial;
+  border-radius:10px;
+  background: white;
+  padding-inline-start: 10px;
+  
+}
+input[type="button"]
+{
+  background: #3385ff;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  
+}
